@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="new.css"> 
+</head>
+
+<body>
+    <h1 align="center" id="zico" style="color: blue;">SCORE CHECKER</h1>
+    <div>
+      <br>
+      <input type="text" placeholder="input your score" id="userscore"> 
+      <br><br>
+      <button onclick="checkscore()" style="height: 6vh;">click</button>
+      <div align="center" id="showScore">Your score is_______</div>
+    </div>
+
+    <script>
+        function checkscore(){
+          var songExcellent = new Audio("Excellent.wav")
+          var songVerygood = new Audio("funny-laugh-no-no-no.mp3")
+          var songFair = new Audio("funny-noise-sound.mp3")
+          var songFailed = new Audio("funny-laugh-no-no-no.mp3")
+          var scoreofUser=document.getElementById('userscore');
+          var userscored=scoreofUser.value;
+          if(userscored>=70 && userscored<100){
+            showScore.innerHTML = "You scored:Excellent!"
+           showScore.style.color='green'
+           songExcellent.play();
+
+          }  else if(userscored>=60 && userscored<70){
+            showScore.innerHTML = "You scored:Very good!"
+            showScore.style.color='green'
+
+          } else if(userscored>=50 && userscored<60){
+            showScore.innerHTML='You scored:Good!'
+            
+
+          } else if(userscored>40 && userscored<50){
+            showScore.innerHTML='You scored:fair!'
+
+          }else if(userscored>=0 && userscored<50){
+           showScore.innerHTML='You scored:Poor!'
+           showScore.style.color='red'
+           songFailed.play();
+          }
+
+          else{
+            alert('Enter a valid score')
+          }
+        }
+    </script>
+</body>
+</html>

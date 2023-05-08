@@ -1,0 +1,39 @@
+#userscore{
+    border-radius: 1pc;
+    margin-left: 10pc;
+    margin-top: 5pc;
+    height: 10vh;
+    width: 20pc;
+    color: black;
+    border-color: rgb(5, 5, 200);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+body{
+    background-color: aqua;
+    background-image:linear-gradient(rgb(181, 247, 247),hsla(0, 0%, 100%, 0.978))
+}
+
+button{
+    margin-left: 15pc;
+    width: 10pc;
+    background-color: rgb(108, 146, 226);
+    border-radius: 1pc;
+    font-size: x-large;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+div{
+    margin: auto;
+    background-color: white;
+    width: 40pc;
+    margin-top: 7pc;
+    border-radius: 1pc;
+}
+#showScore{
+    margin: auto;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
